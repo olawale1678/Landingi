@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .tag {
+        @apply text-lg max-[770px]:text-base outline-none text-slate-500 hover:text-blue-500 max-[770px]:px-4 px-7 py-2 font-semibold block transition ease-linear capitalize;
+    }
+
+    .cta-btn {
+        @apply text-lg outline-none hover:text-blue-500 border-transparent border-2 rounded-md text-white bg-blue-500 hover:bg-white hover:border-blue-500 px-7 py-2 font-semibold inline-block transition ease-linear capitalize;
+    }
+
+    .heading-one {
+        @apply text-4xl font-bold text-center    max-[428px]:text-xl;
+    }
+
+    .starOne {
+        @apply text-3xl text-green-500;
+    }
+
+    .starTwo {
+        @apply text-2xl text-green-400;
+    }
+
+    .widthOne {
+        @apply w-8/12 max-w-[900px] m-auto max-[884px]:w-11/12;
+    }
+
+    .widthTwo {
+        @apply w-11/12 mx-auto max-w-[1200px];
+    }
+
+    .newPhase {
+        @apply py-20;
+    }
+
+    .arrangeStars {
+        @apply text-center flex justify-center;
+    }
+}
+
+.hide-show-text .change-height {
+    height: 115px;
+    transition: all ease-in-out .5s;
+    transform: translateY(-1rem);
+}
+
+.hide-show-text:hover .change-height {
+    height: 100%;
+    transition: all ease-in-out .5s;
+    transform: translateY(0);
+}
+
+.hide-show-text .sec-flex {
+    display: flex;
+    transition: all ease-in-out;
+    align-items: end;
+    padding: 0;
+    transition-duration: .5s;
+}
+
+.hide-show-text:hover .sec-flex {
+    display: flex;
+    align-items: start;
+    padding-top: 5px;
+    transition: all ease-in-out;
+    transition-duration: .5s;
+}
